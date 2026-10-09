@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #191919;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    padding: 15px 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img {
+    width: 115px;
+    height: auto;
+}
+
+.cabecalho ul {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+    margin-right: 5%;
+    list-style: none;
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+}
+
+/* Logo JUICES */
+.elementos {
+    width: 50%;
+}
+
+.elementos > img {
+    width: 300px;
+    height: auto;
+}
+
+/* Texto */
+.elementos p {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 25px;
+}
+
+/* Garrafas pequenas */
+.baixo {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.baixo img {
+    width: 75px;
+    height: auto;
+}
+
+/* Garrafa grande */
+.imagem {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .cabecalho img {
+        width: 90px;
+    }
+
+    .cabecalho ul {
+        gap: 8px;
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .elementos,
+    .imagem {
+        width: 100%;
+    }
+
+    .elementos > img {
+        max-width: 100%;
+    }
+
+    .elementos p {
+        font-size: 16px;
+    }
+
+    .baixo {
+        gap: 10px;
+    }
+
+    .baixo img {
+        width: 18%;
+    }
+
+    .imagem img {
+        max-width: 300px;
+    }
+}

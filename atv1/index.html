@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrocket your Leads</title>
+
+    <style>
+        /* Configuração geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            color: #222;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Menu superior */
+        header {
+            width: 100%;
+            height: 93px;
+            padding: 0 5.5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 44px;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .botao {
+            background-color: #0878f9;
+            color: white;
+            text-decoration: none;
+            font-family: Georgia, serif;
+            font-size: 11px;
+            font-weight: bold;
+            width: 135px;
+            height: 44px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Parte principal */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 7.5%;
+            padding-right: 7%;
+            min-height: 430px;
+        }
+
+        /* Texto da esquerda */
+        .texto {
+            width: 430px;
+            margin-top: -5px;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 1.95;
+        }
+
+        .azul {
+            color: #0878ff;
+        }
+
+        .roxo {
+            color: #7182ff;
+        }
+
+        .descricao {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 11px;
+            font-weight: bold;
+            line-height: 2;
+            color: #444;
+            margin-top: -3px;
+            max-width: 390px;
+        }
+
+        /* Imagem da direita */
+        .imagem {
+            width: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+        }
+
+        .imagem img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Ajuste para telas menores */
+        @media (max-width: 750px) {
+            header {
+                height: auto;
+                padding: 25px 6%;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            main {
+                flex-direction: column;
+                padding: 30px 7%;
+            }
+
+            .texto {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 32px;
+                line-height: 1.5;
+            }
+
+            .descricao {
+                font-size: 12px;
+                margin-top: 12px;
+            }
+
+            .imagem {
+                width: 100%;
+                max-width: 440px;
+                margin: 20px 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+
+        <nav>
+            <a href="#">Resources</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+        </nav>
+
+        <a href="#" class="botao">Contact us</a>
+    </header>
+
+    <main>
+        <section class="texto">
+
+            <h1>
+                Skyrocket your <span class="azul">Leads</span><br>
+                with our Tailored<br>
+                <span class="roxo">Solutions</span>
+            </h1>
+
+            <p class="descricao">
+                Are you a design agency or development firm struggling to find
+                high-quality leads? Look no further! Our specialized lead
+                generation process is here to transform your business.
+            </p>
+
+        </section>
+
+        <section class="imagem">
+            <img src="img/Exercícios de layout.png" alt="Ilustração abstrata azul">
+        </section>
+    </main>
+
+</body>
+</html>

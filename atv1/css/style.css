@@ -1,0 +1,157 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu superior */
+header {
+    width: 100%;
+    height: 93px;
+    padding: 0 5.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Links do menu */
+nav {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Botão Contact us */
+.botao {
+    background-color: #0878f9;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: bold;
+    width: 135px;
+    height: 44px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 7%;
+    min-height: 430px;
+}
+
+/* Texto da esquerda */
+.texto {
+    width: 430px;
+    margin-top: -5px;
+}
+
+/* Título */
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.95;
+}
+
+/* Palavras coloridas */
+.azul {
+    color: #0878ff;
+}
+
+.roxo {
+    color: #7182ff;
+}
+
+/* Descrição */
+.descricao {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 2;
+    color: #444;
+    margin-top: -3px;
+    max-width: 390px;
+}
+
+/* Imagem da direita */
+.imagem {
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 750px) {
+    header {
+        height: auto;
+        padding: 25px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 30px 7%;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .descricao {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .imagem {
+        width: 100%;
+        max-width: 440px;
+        margin: 20px 0 0;
+    }
+}
